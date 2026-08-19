@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: decommissioned
 x-status-note: Acquired by Fifth Third Bancorp (2023); standalone API/developer surface offline as of 2026-07-21.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
