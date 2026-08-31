@@ -68,6 +68,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/fifth-third-bancorp/
+  name: Fifth Third Bancorp
+  x-relationship: acquired
+  x-evidence: "Rize was acquired by Fifth Third Bancorp in 2023; the standalone rizefs."
 - type: DomainSecurity
   url: security/rize-domain-security.yml
 - type: Website
