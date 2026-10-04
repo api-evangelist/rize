@@ -50,7 +50,7 @@ tags:
 - Banking as a Service
 - Embedded Finance
 - Payments
-- Financial-Services
+- Financial Services
 - Brokerage
 tags_raw:
 - Company
@@ -89,3 +89,5 @@ x-lifecycle:
   detail: >-
     The company's own domain returned no A or AAAA record when probed. This is an observation about the domain, not a request from the company.
   indexed: false
+x-acquired-by: fifth-third-bancorp
+x-acquired-date: '2023'
