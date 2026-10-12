@@ -1,0 +1,42 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://composio.dev/toolkits/rize
+checked:
+- https://composio.dev/toolkits/rize
+- https://monid.ai/tools/rize
+- https://n8n.io/integrations/rize/
+- https://zapier.com/apps/rize/integrations
+summary: null
+marketplace_apps:
+- marketplace: composio
+  channel: agent-gateway
+  app: rize
+  url: https://composio.dev/toolkits/rize
+  identity: action-prefix
+  actions:
+  - key: RIZE_CREATE_API_KEY
+  - key: RIZE_CREATE_CARD
+  - key: RIZE_CREATE_CARDHOLDER
+  - key: RIZE_CREATE_COUNTERPARTY
+  - key: RIZE_CREATE_PARTNER_FINANCIAL_ACCOUNT
+  - key: RIZE_CREATE_USER
+  - key: RIZE_GET_CARDHOLDER
+  - key: RIZE_GET_VIRTUAL_CARD_IMAGE
+edges:
+- partner_name: plaid
+  partner: plaid
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/plaid/blob/main/openapi/plaid-plaid-api-openapi.yml
+  contract_reference:
+    repo: plaid
+    spec_file: plaid-plaid-api-openapi.yml
+    value: rize
+    property: schemas.ProcessorTokenCreateRequest.processor
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
